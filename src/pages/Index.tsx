@@ -37,12 +37,12 @@ const Index = () => {
     }
 
     // Filter by category
-    if (selectedCategory) {
+    if (selectedCategory && selectedCategory !== "all") {
       filtered = filtered.filter(listing => listing.category === selectedCategory);
     }
 
     // Filter by city
-    if (selectedCity) {
+    if (selectedCity && selectedCity !== "all") {
       filtered = filtered.filter(listing =>
         listing.location.toLowerCase().includes(selectedCity.toLowerCase())
       );
@@ -92,7 +92,7 @@ const Index = () => {
               <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between mb-6 gap-4">
                 <div>
                   <h1 className="text-2xl font-bold">
-                    {selectedCategory ? getCategoryName(selectedCategory) : "Tüm İlanlar"}
+                    {selectedCategory && selectedCategory !== "all" ? getCategoryName(selectedCategory) : "Tüm İlanlar"}
                   </h1>
                   <p className="text-muted-foreground">
                     {filteredListings.length} ilan bulundu

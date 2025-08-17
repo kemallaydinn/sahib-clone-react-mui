@@ -57,7 +57,7 @@ export const Header = ({ onSearch }: HeaderProps) => {
                   <SelectValue placeholder="Kategori Seçin" />
                 </SelectTrigger>
                 <SelectContent>
-                  <SelectItem value="">Tüm Kategoriler</SelectItem>
+                  <SelectItem value="all">Tüm Kategoriler</SelectItem>
                   {categories.map((category) => (
                     <SelectItem key={category.id} value={category.id}>
                       {category.icon} {category.name}
@@ -88,7 +88,7 @@ export const Header = ({ onSearch }: HeaderProps) => {
                   <SelectValue placeholder="Şehir" />
                 </SelectTrigger>
                 <SelectContent>
-                  <SelectItem value="">Tüm Şehirler</SelectItem>
+                  <SelectItem value="all">Tüm Şehirler</SelectItem>
                   {cities.map((city) => (
                     <SelectItem key={city} value={city}>
                       {city}
