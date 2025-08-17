@@ -52,6 +52,12 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				// Sahibinden custom colors
+				'sahibinden-blue': 'hsl(var(--sahibinden-blue))',
+				'sahibinden-light-blue': 'hsl(var(--sahibinden-light-blue))',
+				'sahibinden-orange': 'hsl(var(--sahibinden-orange))',
+				'sahibinden-gray': 'hsl(var(--sahibinden-gray))',
+				'sahibinden-dark-gray': 'hsl(var(--sahibinden-dark-gray))',
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
